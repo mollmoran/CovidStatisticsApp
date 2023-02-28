@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IS4448 Project</string>
+    <string name="what_would_you_like_to_view_today">Qu\'aimeriez-vous voir aujourd\'hui</string>
+    <string name="covid_statistics">Statistiques de Covid</string>
+    <string name="welcome">Bienvenue</string>
+    <string name="heroes">Héros</string>
+</resources>

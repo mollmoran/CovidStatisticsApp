@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFC"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/header"
+        android:backgroundTint="@color/Blue">
+
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="@color/white"
+        android:cursorVisible="true"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawableTint="@color/lightgrey"
+        android:hint="Search Heroes"
+        android:inputType="textPersonName"
+        android:padding="5dp" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="384dp"
+        android:layout_height="560dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginStart="13dp"
+        app:cardCornerRadius="12dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fbAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="300dp"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/plus_sign"
+            android:background="@color/Blue"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="106dp"
+        android:foregroundGravity="center_horizontal"
+        app:srcCompat="@drawable/herocircle" />
+</RelativeLayout>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Some code here adapted from   on the website androidcodefinder.com -->
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FCFCFC">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/header"
+        android:backgroundTint="@color/Blue"
+        android:layout_marginTop="-10dp"
+        >
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/today_s_covid_statistics"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp">
+
+        </TextView>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/ireland"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="45dp"
+        android:gravity="center">
+
+    </TextView>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="47dp"
+                    android:gravity="top"
+                    android:paddingLeft="9dp"
+                    android:text="@string/_24_hours"
+                    android:textColor="@color/green"
+                    android:textSize="18dp" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="318dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="47dp"
+                    android:background="@color/green" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="0dp"
+                    app:cardCornerRadius="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/new_cases"
+                        android:layout_gravity="top"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:layout_marginTop="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtNewCases"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:drawableStart="@drawable/ic_baseline_add_24"
+                            android:text="576"
+                            android:textColor="@color/Blue"
+                            android:textSize="38dp" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="0dp"
+                    app:cardCornerRadius="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/deaths"
+                        android:layout_gravity="top"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:layout_marginTop="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtNewDeaths"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:drawableStart="@drawable/ic_baseline_add_24"
+                            android:text="7"
+                            android:textColor="@color/Blue"
+                            android:textSize="38dp" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:paddingLeft="9dp"
+                    android:text="Total"
+                    android:textColor="@color/green"
+                    android:layout_marginLeft="47dp"
+                    android:textSize="18dp" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="318dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="47dp"
+                    android:background="@color/green" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="0dp"
+                    app:cardCornerRadius="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:gravity="top"
+                        android:padding="10dp"
+                        android:text="@string/total_cases"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:layout_marginTop="50dp"
+                        android:orientation="vertical">
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/txtConfirmed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="815,000"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/Blue"
+                            android:textSize="38dp" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="0dp"
+                    app:cardCornerRadius="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_deaths"
+                        android:layout_gravity="top"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:layout_marginTop="50dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/txtDeaths"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="64,000"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/Blue"
+                            android:textSize="38dp" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="0dp"
+                    app:cardCornerRadius="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/recovered"
+                        android:layout_gravity="top"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:layout_marginTop="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtRecovered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="231,008"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/Blue"
+                            android:textSize="38dp" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:padding="0dp"
+                    app:cardCornerRadius="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/active"
+                        android:layout_gravity="top"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:layout_marginTop="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtActive"
+                            android:paddingLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="45,954"
+                            android:textColor="@color/Blue"
+                            android:textSize="38dp" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSymptoms"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/custom_button"
+                    android:backgroundTint="@color/green"
+                    android:text="@string/symptoms"
+                    android:textColor="@color/white"
+                    >
+
+                </Button>
+
+                <Button
+                    android:id="@+id/btnPrevention"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/custom_button"
+                    android:backgroundTint="@color/green"
+                    android:text="@string/prevention"
+                    android:textColor="@color/white"
+                    >
+
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clipToPadding="false"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtUpdated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Figures shown were last updated:"
+                    android:layout_gravity="top"
+                    android:padding="10dp"
+                    android:gravity="top"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="106dp"
+        android:foregroundGravity="center_horizontal"
+        app:srcCompat="@drawable/covie_circle" />
+
+
+</RelativeLayout>
